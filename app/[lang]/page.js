@@ -5,8 +5,8 @@ export default async function Home() {
   const photos = await response.json();
 
   return (
-    <div className="container my-4 lg:my-8">
+    <>
       <PhotoList photos={photos} />
-    </div>
+    </>
   );
 }
